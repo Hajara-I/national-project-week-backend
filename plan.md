@@ -14,3 +14,7 @@
 5. npm i pg
 
 6. npm i dotenv
+
+7. npm i nodemon
+
+8. npm i express

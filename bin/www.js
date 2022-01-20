@@ -6,7 +6,7 @@
 import debugLib from "debug";
 import http from "http";
 import "dotenv/config";
-import { dbPort } from "../config.js";
+// import { dbPort } from "../config.js";
 
 import app from "../app.js";
 
@@ -16,7 +16,7 @@ const debug = debugLib("national-project-week-repo-2-room3-soc:server");
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(normalizePort(dbPort || "3000"));
+const port = normalizePort(normalizePort(process.env.PORT || "3000"));
 app.set("port", port);
 
 /**

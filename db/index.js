@@ -1,20 +1,23 @@
 import "dotenv/config";
 import pg from "pg";
 
-import {
-  databaseHost,
-  databaseName,
-  dbPort,
-  password,
-  username,
-} from "../config.js";
+// import {
+//   databaseHost,
+//   databaseName,
+//   dbPort,
+//   password,
+//   username,
+// } from "../config.js";
+
+import { connectionString } from "../config.js";
 
 const pool = new pg.Pool({
-  user: username,
-  host: databaseHost,
-  database: databaseName,
-  password: password,
-  port: dbPort,
+  // user: username,
+  // host: databaseHost,
+  // database: databaseName,
+  // password: password,
+  // port: dbPort,
+  connectionString,
   ssl: { rejectUnauthorized: false },
 });
 

@@ -30,6 +30,7 @@ This group project was created in Week 9 as part of a week-long project week at 
 - Run start to view project in your localhost browser `npm run start`
 
 ## Live Site
+- https://kind-fermat-ab9d16.netlify.app/all-workshops
 
 
 ## Future Updates to Implement
